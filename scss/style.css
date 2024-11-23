@@ -1,0 +1,307 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Albert Sans", sans-serif;
+  direction: rtl;
+}
+
+.main-btn {
+  background-color: #198754;
+  color: #ffffff;
+  padding: 1rem 3rem;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 10px;
+  display: inline-block;
+  border: 1px solid #198754;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-btn:hover, .main-btn:focus {
+  background-color: #ffffff;
+  color: #198754;
+  border: 1px solid #198754;
+}
+.main-btn:hover svg, .main-btn:focus svg {
+  color: #198754;
+}
+
+.Main-cont {
+  min-height: 100vh;
+}
+.Main-cont .background-right {
+  position: relative;
+  border-radius: 40px 0 0 40px;
+  background: linear-gradient(180deg, #29504d, #085b37);
+  z-index: 0;
+}
+.Main-cont .background-right::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/Mask group.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.Main-cont .background-right .logo-text {
+  position: absolute;
+  right: 100px;
+  top: 30px;
+}
+.Main-cont .background-right .logo-text a {
+  text-decoration: none;
+}
+.Main-cont .background-right .text {
+  margin-right: 50px;
+}
+.Main-cont .background-right .text h1 {
+  color: rgba(34, 203, 124, 0.4235294118);
+  line-height: 2;
+}
+.Main-cont .background-right .logo-text,
+.Main-cont .background-right .text {
+  z-index: 1;
+}
+.Main-cont .background-left h1,
+.Main-cont .background-left span {
+  color: #29504d;
+}
+.Main-cont .background-left .input-box {
+  position: relative;
+}
+.Main-cont .background-left .input-box .form-control {
+  padding: 0.375rem 2rem;
+}
+.Main-cont .background-left .input-box .form-control:focus {
+  outline: 4px solid rgba(34, 203, 124, 0.4235294118);
+}
+.Main-cont .background-left .input-box svg {
+  position: absolute;
+  color: #198754;
+  right: 10px;
+  top: 12px;
+}
+
+.Hero {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #29504d, #085b37);
+  border-radius: 0 0 30px 30px;
+  z-index: 0;
+  position: relative;
+}
+.Hero::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 713px;
+  height: 50%;
+  opacity: 0.5;
+  background-image: url("../img/Group.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.Hero .navbar .nav-link {
+  font-weight: 500;
+  padding: 30px 0;
+  color: #ffffff;
+  transition: 0.5s;
+  position: relative;
+}
+.Hero .navbar .nav-link::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 4px;
+  bottom: -1px;
+  background: #198754;
+  transition: 0.5s;
+}
+.Hero .navbar .nav-link:hover,
+.Hero .navbar .nav-link:focus,
+.Hero .navbar .nav-link.active {
+  color: #198754;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.Hero .navbar .nav-link:hover::before,
+.Hero .navbar .nav-link.active::before {
+  width: calc(100% - 5px);
+  left: 1px;
+}
+.Hero .navbar .navbar-toggler {
+  color: #198754;
+  font-size: 25px;
+  border-color: #198754;
+}
+.Hero .navbar input {
+  border-radius: 30px;
+}
+.Hero .navbar input:focus {
+  outline: 4px solid rgba(34, 203, 124, 0.4235294118);
+}
+.Hero .navbar input::-moz-placeholder {
+  text-align: end;
+}
+.Hero .navbar input::placeholder {
+  text-align: end;
+}
+.Hero .hero-title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 700px;
+}
+.Hero .hero-title h2 {
+  color: #198754;
+}
+
+.feature {
+  background-color: #f8f8f8;
+  padding-top: 30px;
+  margin-top: -180px;
+  z-index: 10;
+}
+.feature .features-item {
+  cursor: pointer;
+  display: block;
+  background: #ffffff;
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 30px;
+  transition: all 0.3s ease 0s;
+  position: relative;
+  margin-bottom: 30px;
+  border: 1px solid transparent;
+}
+.feature .features-item:hover, .feature .features-item:focus {
+  border: 1px solid #198754;
+  box-shadow: 0 0 45px rgba(14, 146, 109, 0.1);
+}
+.feature .features-item svg,
+.feature .features-item h5 {
+  color: #198754;
+}
+
+.News {
+  background-color: #f8f8f8;
+}
+.News h3 {
+  color: #198754;
+}
+.News p svg {
+  color: #198754;
+}
+.News .Address h5 {
+  color: #198754;
+}
+.News .Address a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
+.News .input-text {
+  height: 55px;
+  border: 1px solid #495057;
+  display: block;
+  width: 50%;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.News .input-text:focus {
+  outline: 5px solid rgba(34, 203, 124, 0.4235294118);
+  border-color: rgba(34, 203, 124, 0.4235294118);
+}
+.News .oll-card {
+  border-radius: 20px;
+}
+.News .oll-card .title-news h4:hover, .News .oll-card .title-news h4:focus {
+  color: #198754;
+}
+.News .title-news h4 {
+  color: #198754;
+}
+.News .title-news p {
+  font-weight: bold;
+  line-height: 3;
+}
+
+.we {
+  background-color: #f8f8f8;
+}
+.we .inner-title {
+  color: #198754;
+}
+.we .item {
+  text-align: center;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 30px;
+  border: 1px solid transparent;
+  transition: 0.5s;
+}
+.we .item svg {
+  color: #198754;
+}
+.we a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.why {
+  background-color: #f8f8f8;
+}
+.why .item-right h1 {
+  color: #198754;
+}
+.why .title-card {
+  border-bottom: 2px solid #e9ecef;
+}
+.why .title-card p {
+  color: #198754;
+}
+.why .title-card h4 svg {
+  color: #198754;
+}
+
+.footer .img-title li {
+  padding-right: 10px;
+}
+.footer .img-title li a {
+  text-decoration: none;
+  color: #adb5bd;
+}
+.footer .img-title li a:hover {
+  color: #198754;
+}
+.footer .Media li a {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #198754;
+  border: 2px solid #f8f8f8;
+}
+.footer .Media li a:hover {
+  background: #198754;
+  color: #ffffff;
+}/*# sourceMappingURL=style.css.map */
